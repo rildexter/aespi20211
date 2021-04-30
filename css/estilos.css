@@ -1,0 +1,82 @@
+
+p { text-align: right;  } 
+
+table{
+	width:50%;
+	border:1px;
+}
+
+
+/**p { color: blue; background-color: yellow; }**/
+h1 { font-family: arial; }
+
+h2 { font-family: sans-serif; }
+
+body { 
+font-family: "Arial", "Helvetica", sans-serif; 
+} 
+
+body {
+ border-color: none; 
+border-style: none; /**solid; **/
+border-width: 1px;
+}
+
+body { 
+	background-color:skyblue;
+	margin-top:0%;
+	margin-left:10%;
+	margin-right:10%;
+	margin-bottom:0%;
+	}
+	
+img{
+	padding: 0px 0px 0px 0px;
+	margin: 10px 20px 10px 5px;
+}
+
+.pink{
+            background-color: pink;
+        }
+		
+#paragrafo{
+color: red;	
+}
+
+#Empresa{
+	font: arial;
+	color:red;
+	size:+3;
+}
+#formato{
+	float: left;  
+	margin: 0; 
+}
+
+
+#frame { 
+	width: 60%;
+	height: 300px;
+	 }
+#frame1 { 
+	width: 560px;
+	height: 315px;
+
+ }
+#cor-um { 
+  color: red;
+} 
+/**abixo um exemplo de classe. basta chamar no elemento class="colorido"**/
+.colorido{
+	color:red;
+}
+/**body { background: gold; } **/
+/**
+<h1 style="text-align:center">Empresa Mirror Tecnologia</h1>
+<h1 style="text-align:center">Empresa Mirror Tecnologia</h1>
+
+
+#idUm {
+  color: red;
+  text-align: center;
+}**/
