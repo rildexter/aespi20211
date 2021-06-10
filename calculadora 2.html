@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Calculadora</h1>
+
+
+<form id="calcform" name="calcform" method="post" action="">
+ 
+          <label for="valor1">Digite o valor <strong>1</strong>:</label><br>
+      <input type="text" name="valor1" id="valor1"/><br>
+      <label for="oper">Selecione a operação:</label><br>
+
+      <select name="oper" id="oper"><br>
+         <option value="+">Somar</option>
+         <option value="-">Subtrair</option>
+         <option value="*">Mutiplicar</option>
+         <option value="/">Dividir</option>
+      </select><br>
+ 
+      <label for="valor2">Digite o valor <strong>2</strong>:</label><br>
+      <input type="text" name="valor2" id="valor2"/><br>
+      <p><normal id="conta"></normal></p><br>
+      <p>Resultado:<normal id="numbdig"></normal></p>
+ 
+
+      <input type="button" value="Calcular" class="botao" onClick="calcular(document.calcform.oper.value)"/>
+
+      <input type="button" value="Limpar" onClick="limpa()"/>
+</form>
+
+    <script>
+function calcular(oper) {
+   var valor1 = document.calcform.valor1.value;
+   var valor2 = document.calcform.valor2.value;
+
+   if (oper == "+") {
+      var res = parseInt(valor1) + parseInt(valor2);
+   } else {
+      if (oper == "-") {
+         var res = valor1-valor2;
+      } else {
+         if (oper == "*") {
+            var res = valor1*valor2;
+         } else {
+            var res = valor1/valor2;
+         }
+      }
+   }
+   document.getElementById("conta").innerHTML = (`${valor1} ${oper} ${valor2} = ${res}`);
+   document.getElementById("numbdig").innerHTML = res;
+
+}
+
+function limpa(){
+
+   var f=document.getElementById("calcform");
+   var valor1 = f.valor1;
+   var valor2 = f.valor2;
+   valor1.value = "";
+   valor2.value = "";
+   document.getElementById("numbdig").innerHTML = "";
+   document.getElementById("conta").innerHTML = "";
+}
+    </script>
+ </body>
+</html>

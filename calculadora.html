@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <form id="frm"  >
+         <div>
+            <div >
+               <span>Digite os numeros e escolha a operação:</span><br>
+               <input type="text" size="2" id="n1" ><br><br>
+               <input type="button" value="+" onClick="calc(this)">
+               <input type="button" value="-" onClick="calc(this)">
+               <input type="button" value="*" onClick="calc(this)">
+               <input type="button" value="/" onClick="calc(this)">
+               <br><br>
+               <input type="text" size="2"  id="n2" ><br><br>
+               <p><normal id="conta"></normal></p>
+               <p>Resultado:<normal id="numbdig"></normal></p>
+               <br>
+               <input type="button" value="Limpar" onClick="limpar()"/>
+               <input type="button" value="Resultado" class="botao" onClick="calcu()"/>
+            </div>
+         </div>
+   </form>
+    <script>
+       var operacao
+function calc(e){  
+    operacao = e.value;
+}
+function calcu(){
+   var n1=parseFloat(document.getElementById("n1").value);
+   var n2=parseFloat(document.getElementById("n2").value);
+   var calculo = eval(n1+operacao+n2);
+   document.getElementById("conta").innerHTML = (`${n1}${operacao}${n2} = ${calculo}`);
+   document.getElementById("numbdig").innerHTML = calculo;
+  
+}
+function limpar(){
+   var f=document.getElementById("frm");
+   var n1 = f.n1;
+   var n2 = f.n2;
+   n1.value = "";
+   n2.value = "";
+   document.getElementById("numbdig").innerHTML = "";
+   document.getElementById("conta").innerHTML = "";
+}
+    </script>
+</body>
+</html>
