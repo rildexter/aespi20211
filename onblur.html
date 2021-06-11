@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/teste.css" <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css"> 	
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Comandos usados no Javascript</h3>
+    <h4>O efeito a seguir devera colocar a palavra em maiusculas</h4>
+    <p>Digite seu nome: <input type="text" id="fname" onblur="myFunction()"></p>
+    <hr>
+    <p>Pressione uma tecla</p>
+      <input type="text" onkeypress="teclado()"><br>
+      <hr>
+      <!--clique mouse-->
+      <div>
+         <button onclick="mouse()">clique aqui</button><br>
+      </div>
+    <!--nova janela-->
+    <form>
+       <input type="button" value="Open Window" onclick="openWin()">
+    </form>
+    <!--botão voltar-->
+   <button onclick="goBack()">Voltar</button> 
+   <!--botão aguarda 3 segundos para aparecer o alerta-->
+ <button onclick="setTimeout(openWin, 3000);">Clique aqui</button> 
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Estudo de Funções</h1>
+    <button onclick="adicionar()">Adicione 2</button>
+    <button onclick="subtrair()">Subtraia 2</button>
+    <p>Valor inicial da variavel W:
+        <normal id="mostra1"></normal></p> 
+    <p>Novo valor da variavel W:
+        <normal id="mostra2"></normal></p>  
+    <hr>
+    <script>
+        var w=1;
+document.getElementById("mostra1").innerHTML =w;
+
+function adicionar() {
+document.getElementById("mostra2").innerHTML = w=w+2;
+            }
+function subtrair() {
+document.getElementById("mostra2").innerHTML = w=w-2;
+        }
+    </script>
+    
+
+</body>
+</html>

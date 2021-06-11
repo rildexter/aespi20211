@@ -1,3 +1,40 @@
-p{
-	color:green;
+.button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button:hover{
+    background-color: aqua;
+}
+
+.button:active{
+    background-color:chocolate;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.dropdown{
+    position: relative;
+    display:inline-block;
+    margin: 50px 0px 0px 150px;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: #666;
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+#teste{
+    color:red;
 }

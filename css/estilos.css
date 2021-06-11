@@ -2,9 +2,9 @@ p {
   text-align: justify;
 }
 
-table {
+table, td,th ,tr{
   width: 50%;
-  border: 1px;
+  border: 1px solid black;
 }
 
 /**p { color: blue; background-color: yellow; }**/
@@ -55,7 +55,6 @@ img {
   border: 1px solid black;
   border-radius: 10px;
   height: 200px;
-  ;
   width: auto;
 }
 
@@ -103,7 +102,7 @@ img {
 }
 .dropdown {
   position: relative;
-  display: inline-block;
+  display:flexbox;
 }
 
 .dropdown-content {

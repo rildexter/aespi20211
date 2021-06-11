@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Estudo de Formulários</h1>
+    <label for="fname">Seu Nome: </label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lnumb">Sua Idade: </label><br>
+    <input id="numb"><br><br>
+    <button type="button" onclick="Function1()">Enviar</button>
+    <p>Seu nome:<normal id="namedig"></normal></p>
+    <p>Sua idade:<normal id="numdig"></normal></p>
+    
+    <script>
+        function Function1(){
+            var valor;
+            valor = document.getElementById("numb").value;
+            document.getElementById("numdig").innerHTML = valor;
+            var valor;
+            valor = document.getElementById("fname").value;
+            document.getElementById("namedig").innerHTML = valor;
+
+        }
+    </script>
+</body>
+</html>
